@@ -1,0 +1,120 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+            padding: 1.5rem;
+        }
+        .contenedor-principal {
+            max-width: 1024px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .seccion-encabezado {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.75rem;
+        }
+        .tarjeta-ejercicio {
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #f9fafb;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        button {
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s ease-in-out;
+            margin-right: 0.75rem;
+        }
+        .btn-principal { background-color: #4f46e5; color: white; }
+        .btn-principal:hover { background-color: #4338ca; }
+        .btn-secundario { background-color: #6b7280; color: white; }
+        .btn-secundario:hover { background-color: #4b5563; }
+        .btn-crear { background-color: #10b981; color: white; }
+        .btn-crear:hover { background-color: #059669; }
+        .btn-eliminar { background-color: #ef4444; color: white; }
+        .btn-eliminar:hover { background-color: #dc2626; }
+
+        .elemento-tarea {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: #e0f2fe;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .elemento-tarea.completada {
+            background-color: #d1fae5;
+        }
+        .texto-tarea {
+            flex-grow: 1;
+            margin-right: 1rem;
+        }
+        .acciones-tarea button {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            margin-left: 0.75rem;
+            padding: 0.3rem;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        .icono-chequear { color: #f97316; }
+        .icono-chequear.completado { color: #22c55e; }
+        .icono-eliminar { color: #ef4444; }
+        .icono-eliminar:hover { color: #dc2626; }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .contenido-modal {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 450px;
+            width: 90%;
+        }
+        .contenido-modal p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            color: #4b5563;
+        }
+        .botones-modal {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .botones-modal button {
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .btn-modal-confirmar { background-color: #ef4444; color: white; }
+        .btn-modal-confirmar:hover { background-color: #dc2626; }
+        .btn-modal-cancelar { background-color: #d1d5db; color: #374151; }
+        .btn-modal-cancelar:hover { background-color: #9ca3af; }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades DOM - Soluciones en Español</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./ejercicios/EJERCICIOS.CSS">
+    <script src="./ejercicios/EJERCICIO.JS"></script>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="contenedor-principal">
+        <h1 class="text-3xl font-bold text-center mb-8 text-indigo-700">Soluciones de Actividades del DOM</h1>
+
+        <div id="modalConfirmacion" class="modal hidden">
+            <div class="contenido-modal">
+                <p id="mensajeModal"></p>
+                <div class="botones-modal">
+                    <button id="botonConfirmar" class="btn-modal-confirmar">Sí, eliminar</button>
+                    <button id="botonCancelar" class="btn-modal-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ejercicio 7: Aplicación Web para Acceder a los Otros Ejercicios -->
+        <div id="ejercicio7" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">7. Aplicación Web: Navegación de Ejercicios</h2>
+            <p class="mb-4 text-gray-700">Utiliza los botones para ir directamente a la sección de cada ejercicio:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <a href="#ejercicio1"><button class="w-full btn-principal">Ejercicio 1</button></a>
+                <a href="#ejercicio2"><button class="w-full btn-principal">Ejercicio 2</button></a>
+                <a href="#ejercicio3"><button class="w-full btn-principal">Ejercicio 3</button></a>
+                <a href="#ejercicio4"><button class="w-full btn-principal">Ejercicio 4</button></a>
+                <a href="#ejercicio5"><button class="w-full btn-principal">Ejercicio 5</button></a>
+                <a href="#ejercicio6"><button class="w-full btn-principal">Ejercicio 6: Gestión de Tareas</button></a>
+            </div>
+        </div>
+
+        <!-- Ejercicio 1: Seleccionar y Mostrar Información de Elementos del DOM -->
+        <div id="ejercicio1" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">1. Seleccionar y Mostrar Información</h2>
+            <div id="info" class="p-3 bg-blue-100 rounded-md mb-3">Este es el div con ID 'info'.</div>
+            <p class="detalle p-3 bg-green-100 rounded-md mb-3">Este es un párrafo con la clase 'detalle'.</p>
+            <a href="#" class="block text-blue-600 underline mb-3">Este es un enlace de ejemplo.</a>
+            <p class="p-3 bg-yellow-100 rounded-md mb-3">Otro párrafo en la página.</p>
+            <p class="p-3 bg-red-100 rounded-md mb-3">Un tercer párrafo.</p>
+            <button id="ejecutarEj1" class="btn-principal">Ejecutar Ejercicio 1</button>
+        </div>
+
+        <!-- Ejercicio 2: Modificar el Contenido y Atributos de los Elementos -->
+        <div id="ejercicio2" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">2. Modificar Contenido y Atributos</h2>
+            <a id="enlaceEj2" href="https://ejemplo.com" class="block text-blue-600 underline mb-3">Este es un enlace para el Ejercicio 2.</a>
+            <h3 class="tituloEj2 text-xl font-medium mb-3">Título Original del Ejercicio 2</h3>
+            <button id="ejecutarEj2" class="btn-principal">Ejecutar Ejercicio 2</button>
+        </div>
+
+        <!-- Ejercicio 3: Crear y Eliminar Elementos Dinámicamente -->
+        <div id="ejercicio3" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">3. Crear y Eliminar Elementos</h2>
+            <p class="parrafo-a-eliminar p-3 bg-orange-100 rounded-md mb-3">Este es el párrafo que se puede eliminar primero.</p>
+            <button id="crearParrafoEj3" class="btn-crear">Crear Párrafo Nuevo</button>
+            <button id="eliminarParrafoEj3" class="btn-eliminar">Eliminar Primer Párrafo</button>
+            <div id="areaContenidoDinamicoEj3" class="mt-4 p-3 bg-gray-50 rounded-md border border-dashed border-gray-300">
+                
+            </div>
+        </div>
+
+        <!-- Ejercicio 4: Reemplazar un Elemento Existente -->
+        <div id="ejercicio4" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">4. Reemplazar un Elemento</h2>
+            <div id="divAntiguo" class="p-4 bg-yellow-200 rounded-md mb-4">Soy el DIV original que será reemplazado.</div>
+            <button id="reemplazarDivEj4" class="btn-principal">Reemplazar DIV</button>
+        </div>
+
+        <!-- Ejercicio 5: Manejo de Eventos -->
+        <div id="ejercicio5" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">5. Manejo de Eventos</h2>
+            <button id="botonClickMe" class="btn-principal">Haz Clic Aquí</button>
+            <button id="botonRemoverEvento" class="btn-secundario">Remover Evento de Clic</button>
+            <p id="estadoDelEvento" class="mt-3 text-sm text-gray-700">Estado del evento: Activo</p>
+        </div>
+
+        <!-- Ejercicio 6: Desarrollo de aplicación web Gestión de Tareas -->
+        <div id="ejercicio6" class="tarjeta-ejercicio">
+            <h2 class="seccion-encabezado">6. Aplicación de Gestión de Tareas</h2>
+            <div class="flex flex-col sm:flex-row gap-2 mb-4">
+                <input type="text" id="entradaTarea" placeholder="Escribe una nueva tarea aquí" class="flex-grow p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                <button id="botonAgregarTarea" class="btn-crear">Agregar Tarea</button>
+            </div>
+            <div id="listaDeTareas" class="mt-4 border border-gray-200 rounded-md p-4">
+                <p class="text-gray-500 text-center" id="mensajeSinTareas">No hay tareas aún. ¡Añade una!</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
