@@ -25,22 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // --- Ejercicio 1: Seleccionar y Mostrar Información ---
-    var btnEjecutar1 = document.getElementById('ejecutarEj1'); // Corrected ID
+    var btnEjecutar1 = document.getElementById('ejecutarEj1'); 
     btnEjecutar1.addEventListener('click', function() {
         // Seleccionar el div con ID 'infoDiv'
-        var elDivInfo = document.getElementById('info'); // Corrected ID
-        if (elDivInfo) { // Siempre es bueno verificar que el elemento exista
+        var elDivInfo = document.getElementById('info'); 
+        if (elDivInfo) { 
             console.log('Ejercicio 1: Contenido del div con ID "infoDiv":', elDivInfo.textContent);
         }
 
         // Seleccionar el primer párrafo con la clase detalleParrafo
-        var elParrafoDetalle = document.querySelector('.detalle'); // Corrected class
+        var elParrafoDetalle = document.querySelector('.detalle');
         if (elParrafoDetalle) {
             elParrafoDetalle.textContent = 'Este es un detalle modificado con querySelector.';
             console.log('Ejercicio 1: Texto del párrafo ".detalle" modificado.');
         }
 
-        // Seleccionar todos los elementos <p>
+        
         var todosLosParrafos = document.querySelectorAll('p');
         for (var i = 0; i < todosLosParrafos.length; i++) {
             todosLosParrafos[i].style.backgroundColor = 'lightblue'; // Cambia el color de fondo
